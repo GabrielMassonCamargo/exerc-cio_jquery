@@ -1,0 +1,117 @@
+/* Estilos gerais para centralizar e melhorar o layout */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #97a3a9, #656565);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Container principal */
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    color: #333;
+}
+
+/* Título */
+.container h1 {
+    font-size: 2em;
+    color: #4facfe;
+    margin-bottom: 20px;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos de entrada */
+form input[type="text"] {
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus {
+    border-color: #00c6ff;
+    background: #f0faff;
+}
+
+/* Botões */
+form button {
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/* Botão de adicionar */
+form button[type="submit"] {
+    background: #4caf50;
+}
+
+form button[type="submit"]:hover {
+    background: #388e3c;
+}
+
+/* Botão de apagar */
+form button[type="reset"] {
+    background: #e63946; /* Vermelho vibrante */
+    color: #ffffff;
+}
+
+form button[type="reset"]:hover {
+    background: #c12d34; /* Vermelho mais escuro no hover */
+}
+
+/* Lista */
+.Lista {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.Lista ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Lista ul li {
+    background: #4facfe;
+    color: #ffffff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animação de hover nos itens da lista */
+.Lista ul li:hover {
+    background: #00c6ff;
+    transition: 0.3s ease-in-out;
+}
+
+/* Estilo para itens concluídos */
+.concluido {
+    text-decoration: line-through;
+    color: #888; /* Cor acinzentada para indicar tarefa concluída */
+    transition: 0.3s;
+}
